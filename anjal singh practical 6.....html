@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship / Seminar Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .container {
+            width: 60%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        fieldset {
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        legend {
+            font-weight: bold;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        .inline {
+            width: auto;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Scholarship / Seminar Registration Form</h2>
+
+    <form>
+
+        <!-- Personal Details -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label>Full Name:</label>
+            <input type="text" name="name" required>
+
+            <label>Email:</label>
+            <input type="email" name="email" required>
+
+            <label>Phone Number:</label>
+            <input type="tel" name="phone" required>
+
+            <label>Date of Birth:</label>
+            <input type="date" name="dob">
+        </fieldset>
+
+        <!-- Gender (Radio Buttons) -->
+        <fieldset>
+            <legend>Gender</legend>
+
+            <input type="radio" name="gender" value="male" class="inline"> Male
+            <input type="radio" name="gender" value="female" class="inline"> Female
+            <input type="radio" name="gender" value="other" class="inline"> Other
+        </fieldset>
+
+        <!-- Course Selection (Dropdown) -->
+        <fieldset>
+            <legend>Program Selection</legend>
+
+            <label>Select Program:</label>
+            <select name="program">
+                <option value="">--Select--</option>
+                <option value="scholarship">Scholarship Program</option>
+                <option value="seminar">Seminar</option>
+                <option value="workshop">Workshop</option>
+            </select>
+
+            <label>Select Field of Study:</label>
+            <select name="field">
+                <option>Computer Science</option>
+                <option>Engineering</option>
+                <option>Business</option>
+                <option>Arts</option>
+            </select>
+        </fieldset>
+
+        <!-- Skills (Checkboxes) -->
+        <fieldset>
+            <legend>Skills</legend>
+
+            <input type="checkbox" name="skills" value="communication" class="inline"> Communication
+            <input type="checkbox" name="skills" value="programming" class="inline"> Programming
+            <input type="checkbox" name="skills" value="leadership" class="inline"> Leadership
+            <input type="checkbox" name="skills" value="management" class="inline"> Management
+        </fieldset>
+
+        <!-- Additional Info -->
+        <fieldset>
+            <legend>Additional Information</legend>
+
+            <label>Why do you want to apply?</label>
+            <textarea rows="4"></textarea>
+        </fieldset>
+
+        <!-- Submit -->
+        <button type="submit">Submit Registration</button>
+
+    </form>
+</div>
+
+</body>
+</html>
